@@ -1,0 +1,5 @@
+library(lsr)
+data <- read.csv("/Users/macintoshhd/Desktop/Homework/Statistics/Homework3/ch6/exercise6_7.csv", fileEncoding = 'GBK')
+t.test   (data$新肥料, data$旧肥料, var.equal = TRUE, alternative = "greater")
+var.test (data$新肥料, data$旧肥料, alternative = "two.sided")
+cohensD  (data$新肥料, data$旧肥料)
